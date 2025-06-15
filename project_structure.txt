@@ -1,0 +1,52 @@
+pacman_ai_project/
+│
+├── README.md                       # Instructions de base pour exécuter le projet
+├── requirements.txt                # Dépendances (pygame, numpy, etc.)
+├── main.py                         # Point d’entrée du jeu (lance Game)
+│
+├── config/
+│   └── settings.py                 # Paramètres globaux (taille grille, nombre de pacmans, etc.)
+│
+├── environment/
+│   ├── __init__.py
+│   └── grid.py                     # Classe Environment ou Grid
+│
+├── agents/
+│   ├── __init__.py
+│   ├── pacman_agent.py            # Classe de base PacmanAgent avec choose_action()
+│   ├── ghost_agent.py             # (Optionnel) Classe GhostAgent
+│   └── agent_factory.py           # Crée et configure les agents
+│
+├── algorithms/
+│   ├── __init__.py
+│   ├── bfs.py                     # Breadth-First Search
+│   ├── dfs.py                     # Depth-First Search
+│   ├── astar.py                   # A* Search
+│   ├── ucs.py                     # Uniform Cost Search
+│   ├── q_learning.py             # (Optionnel) Q-learning
+│   └── adversarial.py            # (Optionnel) Minimax, Alpha-Beta
+│
+├── logic/
+│   ├── __init__.py
+│   ├── game.py                    # Classe Game avec boucle principale
+│   └── conflict_solver.py        # (Optionnel) CSP pour gestion des conflits
+│
+├── visualization/
+│   ├── __init__.py
+│   ├── console_display.py        # Affichage console
+│   └── pygame_display.py         # (Optionnel) Affichage graphique avec Pygame
+│
+├── data/
+│   ├── maps/                      # Fichiers de grille d’environnement (ex: map1.txt)
+│   └── logs/                      # Logs de parties, pour debug ou analyse
+│
+├── docs/
+│   ├── report.pdf                 # Rapport final
+│   ├── architecture_diagram.png  # Diagramme UML ou bloc
+│   └── presentation_slides.pdf   # Slides de présentation
+│
+└── tests/
+    ├── __init__.py
+    ├── test_grid.py
+    ├── test_agents.py
+    └── test_algorithms.py
